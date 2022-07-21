@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.homepage .main .title i{
+    font-size: 30px;
+    margin-right: 10px;
+}
+.homepage .tab-content{
+    margin: auto;
+}
+p{
+    font-size: 24px;
+    color: #726f6f;
+}

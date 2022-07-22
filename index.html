@@ -108,7 +108,7 @@
                   <p>Công thức: Lương = Lương 1 ngày * số ngày làm</p>
                 </div>
                 <div class="main-content mt-5">
-                  <p>Nhập số tiền lương 1 ngày</p>
+                  <label class="mb-4">Nhập số tiền lương 1 ngày</label>
                   <input
                     class="form-control"
                     id="txtMoneyPerDay"
@@ -116,7 +116,7 @@
                     placeholder="Tiền lương 1 ngày"
                     required
                   />
-                  <p>Nhập số ngày làm việc</p>
+                  <label class="mb-4 mt-4">Nhập số ngày làm việc</label>
                   <input
                     class="form-control"
                     id="txtDays"
@@ -124,8 +124,8 @@
                     placeholder="Số ngày làm việc"
                     required
                   />
-                  <button class="mt-4 mb-4 btn btn-success" type="submit" onclick="ex1()">Tính Lương</button>
-                  <p>Kết quả</p>
+                  <button class="d-block mt-4 mb-4 btn btn-success" type="submit" onclick="ex1()">Tính Lương</button>
+                  <label>Kết quả</label>
                   <div class="alert alert-danger mt-4" id="rs1"></div>
                 </div>
               </div>
@@ -143,7 +143,7 @@
                   <p>Công thức: Giá trị trung bình = Tổng giá trị các số / n</p>
                 </div>
                 <div class="main-content mt-5">
-                  <p>Nhập số thứ 1</p>
+                  <label class="mb-4">Nhập số thứ 1</label>
                   <input
                     class="form-control"
                     id="txtNum1"
@@ -151,7 +151,7 @@
                     placeholder="Số thứ 1"
                     required
                   />
-                  <p>Nhập số thứ 2</p>
+                  <label class="mb-4 mt-4">Nhập số thứ 2</label>
                   <input
                     class="form-control"
                     id="txtNum2"
@@ -159,7 +159,7 @@
                     placeholder="Số thứ 2"
                     required
                   />
-                  <p>Nhập số thứ 3</p>
+                  <label class="mb-4 mt-4">Nhập số thứ 3</label>
                   <input
                     class="form-control"
                     id="txtNum3"
@@ -167,7 +167,7 @@
                     placeholder="Số thứ 3"
                     required
                   />
-                  <p>Nhập số thứ 4</p>
+                  <label class="mb-4 mt-4" >Nhập số thứ 4</label>
                   <input
                     class="form-control"
                     id="txtNum4"
@@ -175,7 +175,7 @@
                     placeholder="Số thứ 4"
                     required
                   />
-                  <p>Nhập số thứ 5</p>
+                  <label class="mb-4 mt-4">Nhập số thứ 5</label>
                   <input
                     class="form-control"
                     id="txtNum5"
@@ -199,29 +199,21 @@
               <div class="main">
                 <div class="title">
                   <i class="fa-solid fa-sack-dollar"></i>
-                  <h2 class="d-inline-block">Tính tiền lương nhân viên</h2>
-                  <p>Công thức: Lương = Lương 1 ngày * số ngày làm</p>
+                  <h2 class="d-inline-block">Quy đổi tiền</h2>
                 </div>
                 <div class="main-content mt-5">
-                  <p>Nhập số tiền lương 1 ngày</p>
+                  <label class="mb-4">Nhập số tiền USD</label>
                   <input
                     class="form-control"
-                    id="txtMoneyPerDay"
-                    type="text"
-                    placeholder="Tiền lương 1 ngày"
+                    id="txtNumberUSD"
+                    type="number"
+                    placeholder="USD"
                     required
                   />
-                  <p>Nhập số ngày làm việc</p>
-                  <input
-                    class="form-control"
-                    id="txtDays"
-                    type="text"
-                    placeholder="Số ngày làm việc"
-                    required
-                  />
-                  <button class="mt-4 mb-4 btn btn-success">Tính Lương</button>
-                  <p>Kết quả</p>
-                  <div class="alert alert-danger mt-4"></div>
+                 
+                  <button class="mt-4 mb-4 btn btn-success d-block" onclick="ex3()">Quy Đổi Tiền</button>
+                  <label>Kết quả</label>
+                  <div id="rs3" class="alert alert-danger mt-4" "></div>
                 </div>
               </div>
             </div>
@@ -234,29 +226,29 @@
               <div class="main">
                 <div class="title">
                   <i class="fa-solid fa-sack-dollar"></i>
-                  <h2 class="d-inline-block">Tính tiền lương nhân viên</h2>
-                  <p>Công thức: Lương = Lương 1 ngày * số ngày làm</p>
+                  <h2 class="d-inline-block">Tính diện tích, chu vi hình chữ nhật</h2>
                 </div>
                 <div class="main-content mt-5">
-                  <p>Nhập số tiền lương 1 ngày</p>
+                  <label>Nhập chiều dài</label>
                   <input
                     class="form-control"
-                    id="txtMoneyPerDay"
+                    id="txtDai"
                     type="text"
-                    placeholder="Tiền lương 1 ngày"
+                    placeholder="Chiều dài"
                     required
                   />
-                  <p>Nhập số ngày làm việc</p>
+                  <label>Nhập chiều rộng</label>
                   <input
                     class="form-control"
-                    id="txtDays"
+                    id="txtRong"
                     type="text"
-                    placeholder="Số ngày làm việc"
+                    placeholder="Chiều rộng"
                     required
                   />
-                  <button class="mt-4 mb-4 btn btn-success">Tính Lương</button>
+                  <button class="mt-4 mb-4 btn btn-success" onclick="ex4()">Tính</button>
                   <p>Kết quả</p>
-                  <div class="alert alert-danger mt-4"></div>
+                  <label>Chu vi:</label><div id="rs4" class="d-inline result-4 alert alert-danger mt-4"></div>
+                  <label>Diện tích:</label><div id="rs5" class="d-inline result-4 alert alert-danger mt-4"></div>
                 </div>
               </div>
             </div>
@@ -269,29 +261,21 @@
               <div class="main">
                 <div class="title">
                   <i class="fa-solid fa-sack-dollar"></i>
-                  <h2 class="d-inline-block">Tính tiền lương nhân viên</h2>
-                  <p>Công thức: Lương = Lương 1 ngày * số ngày làm</p>
+                  <h2 class="d-inline-block">Tính tổng 2 ký số</h2>
                 </div>
                 <div class="main-content mt-5">
-                  <p>Nhập số tiền lương 1 ngày</p>
+                  <label>Nhập số có 2 chữ số</label>
                   <input
                     class="form-control"
-                    id="txtMoneyPerDay"
-                    type="text"
-                    placeholder="Tiền lương 1 ngày"
+                    id="txtNumber"
+                    type="number"
+                    placeholder="Nhập số"
                     required
                   />
-                  <p>Nhập số ngày làm việc</p>
-                  <input
-                    class="form-control"
-                    id="txtDays"
-                    type="text"
-                    placeholder="Số ngày làm việc"
-                    required
-                  />
-                  <button class="mt-4 mb-4 btn btn-success">Tính Lương</button>
+                 
+                  <button class="mt-4 mb-4 btn btn-success" onclick="ex5()">Tính</button>
                   <p>Kết quả</p>
-                  <div class="alert alert-danger mt-4"></div>
+                  <div id="rs6" class="alert alert-danger mt-4"></div>
                 </div>
               </div>
             </div>
